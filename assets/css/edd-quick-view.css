@@ -1,0 +1,94 @@
+/* Button */
+.edd-quick-view-button {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.edd-quick-view-button .edd-quick-view-label {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.edd-quick-view-button[data-edd-loading] .edd-quick-view-label {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.edd-quick-view-button[data-edd-loading] .edd-loading {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+/* Dialog */
+.edd-quick-view-dialog.ui-dialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: 0;
+    padding: .5em;
+
+    background-color: rgba(0,0,0, 0.2);
+
+    z-index: 1010;
+}
+
+.edd-quick-view-dialog.ui-dialog .ui-dialog-titlebar {
+    position: relative;
+}
+
+.edd-quick-view-dialog.ui-dialog .ui-dialog-title {
+    display: none;
+}
+
+.edd-quick-view-dialog.ui-dialog .ui-dialog-titlebar-close {
+    position: absolute;
+    right: .2em;
+    top: .8em;
+    width: 20px;
+    margin: -10px 0 0 0;
+    padding: 1px;
+    height: 20px;
+    outline: 0;
+
+    background: transparent url('data:image/svg+xml;charset=utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><path d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path></svg>') no-repeat center center;
+    background-size: 12px;
+
+    opacity: .3;
+    filter: Alpha(Opacity=30);
+
+    z-index: 1011;
+}
+
+.edd-quick-view-dialog.ui-dialog .ui-dialog-titlebar-close:hover {
+    opacity: 0.6;
+    filter: Alpha(Opacity=60);
+}
+
+.edd-quick-view-dialog.ui-dialog .ui-dialog-titlebar-close .ui-button-text {
+    display: none;
+}
+
+.ui-widget-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: #000;
+    opacity: .6;
+    filter: Alpha(Opacity=60);
+
+    z-index: 1000;
+}
+
+/* Dialog content */
+.edd-quick-view-dialog.ui-dialog .ui-dialog-content {
+    border: 0;
+    padding: 1em;
+    overflow: auto;
+
+    background-color: #fff;
+    width: auto;
+}
